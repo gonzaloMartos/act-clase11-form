@@ -59,15 +59,13 @@ main{
 
 .container{
     width: 320px;
-    height: 550px;
-    background-color: aqua;
+    height: 600px;
 }
 
 .portada{
     width: 320px;
     height: 200px;
     display: flex;
-    background-color: #00669f;
 }
 
 .portada .bxs-heart{
@@ -98,13 +96,45 @@ main{
     border-radius: 5em;
 }
 
-h3{
+.texto{
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #f3f3f3;
+}
+
+.texto h3{ 
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 
-.container p{
+.texto p{
     padding: 10px;
     font-size: 18px;
 }
+
+.enlace{
+    text-align: center;
+}
+
+.enlace a{
+    padding: 10px 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #00669f;
+    color: white;
+}
+
+footer{
+    background-color: #00669f;
+    padding: 20px 0;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
