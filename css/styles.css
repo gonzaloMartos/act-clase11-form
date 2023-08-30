@@ -127,9 +127,26 @@ main{
     color: white;
 }
 
+.plus{
+    width: 200px;
+    height: 100%;
+    background-color: ;
+    display: flex;
+    position: fixed;
+    left: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus .bxs-plus-circle{
+    font-size: 80px;
+    color: #00669f;
+}
+
 footer{
     background-color: #00669f;
     padding: 20px 0;
+    
 }
 
 footer p{
