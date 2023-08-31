@@ -25,21 +25,24 @@
 
     <main>
         <div class="container">
-            <h2>Añadí tu super!</h2>
-            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <div class="titulos">
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+            </div>
+            
             <fieldset>
-                <div>
-                    <label for="">*Nombre</label>
-                    <input type="text">
+                <div class="nom">
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" id="nombre" required>
 
-                    <label for="">Fecha</label>
-                    <input type="date">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
                 </div>
 
-                <div>
+                <div class="esp">
                     <label for="">*Especie</label>
                     <select>
-                        <option></option>
+                        <option>Especie</option>
                     </select>
 
                     <label for="">Agrega Foto</label>
@@ -48,22 +51,38 @@
             </fieldset>
 
             <fieldset>
-                <div>
-                    <textarea></textarea>
+                <div class="text">
+                    <textarea placeholder="Descripción"></textarea>
                 </div>
 
-                <div>
-                    <label for="">Poderes</label>
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
+                <div class="op">
+                    <div class="po">
+                        <label>Poderes</label>
 
-                    <label for="">Tipo de personaje</label>
-                    <input type="radio">
-                    <input type="radio">
+                        <label for="volar" class="power"><input id="volar" type="checkbox" name="poderes" class="inline" value="volar" /> Volar</label>
+                        
+                        <label for="inteligencia" class="power"><input id="inteligencia" type="checkbox" name="poderes" value="inteligencia" class="inline" /> SuperInteligencia</label>
+                        
+                        <label for="rayo laser" class="power"><input id="rayo laser" type="checkbox" name="poderes" value="laser" class="inline" /> Vista de rayo laser</label>
+                       
+                        <label for="billetera" class="power"><input id="billetera" type="checkbox" name="poderes" value="billetera" class="inline" /> Billetera gorda</label>
+                        
+                    </div>
+
+                    <div class="tip">
+                        <label>Tipo de personaje</label>
+
+                        <label for="heroe" class="power"><input id="heroe" type="radio" name="personaje" value="heroe" class="inline" /> Héroe / Heroína</label>
+                        
+                        <label for="villano" class="power"><input id="villano" type="radio" name="personaje" value="villano" class="inline" /> Villano / Villana</label>
+                        
+                    </div>
                 </div>
             </fieldset>
+
+            <div class="boton">
+                <input type="button" value="AÑADIR">
+            </div>
         </div>
 
     </main>
